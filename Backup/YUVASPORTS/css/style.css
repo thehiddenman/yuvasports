@@ -1,0 +1,998 @@
+body {
+    font-family: Source Sans Pro,sans-serif;
+    font-weight: 400;
+}
+
+h1.text-heading {
+    font-size: 30px !important;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Navbar */
+
+.navbar {
+    box-shadow: 0 4px 8px 0 hsl(0deg 0% 7% / 50%);
+    background-image: linear-gradient(
+90deg
+,#19398a 12%,#1b4c92 50%,#19398a 89%);
+    color: #fff;
+    width: 100%;
+    z-index: 100;
+    min-height: 70px;
+
+}
+.navbar .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.navbar .navbar-brand img {
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+.navbar .nav-item.active {
+    border-left: 4px solid #fc0;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .nav-item .dropdown-menu {
+    box-shadow: 0 4px 8px 0 hsl(0deg 0% 7% / 50%);
+    background-color: #fff;
+    text-align: center;
+}
+
+.dropdown-item {
+    color: #1f4cbe !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dropdown-item:hover {
+    color: #163072 !important;
+}
+
+/* Slider */
+
+.carousel{
+    margin-top: 55px;
+    margin-bottom: 1rem;
+}
+
+.carousel-item{
+    height: 720px;
+}
+
+.carousel-image-1{
+    background: url('../img/slide-1.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-image-2{
+    background: url('../img/slide-2.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-image-3{
+    background: url('../img/slide-3.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-image-1::before,
+.carousel-image-2::before,
+.carousel-image-3::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+
+.carousel-caption h2 {
+    text-align: left;
+    font-size: 27px;
+    color: #fff;
+    line-height: 42px;
+    font-weight: 700;
+    background-image: linear-gradient(
+90deg
+,#19398a 12%,#1b4c92 50%,#19398a 89%);
+    border-left: 4px solid #fc0;
+    padding: 20px 20px;
+    text-shadow: none;
+    transition: all .3s linear;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    text-align: left;
+    color: #fff;
+    line-height: 42px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 4px solid #1f4cbe;
+    padding: 20px 20px;
+    text-shadow: none;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    width: 50%;
+}
+
+/* Home Page - Live Match */
+
+#homeLiveMatch {
+    background: url("../img/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    width: 100%;
+    margin-top: -20px;
+    padding: 50px 0 50px 0;
+}
+
+#homeLiveMatch .hp-team-logo {
+    width: 125px;
+}
+
+#homeLiveMatch h1.hp-live-score {
+    color: #1f4cbe !important;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#homeLiveMatch h1.hp-live-vs-text {
+    color: #ef4123 !important;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+#homeLiveMatch h4 {
+    color: #000 !important;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+} 
+
+#homeLiveMatch a.btn-danger {
+    background-color:#ef4123 !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#homeLiveMatch a.btn-danger:hover {
+    background-color:#c4371e !important;
+    color: #fff;
+}
+
+/* Top Performer Section */
+
+#topPerformerAndNewsSection {
+    padding: 50px;
+}
+
+#topPerformerAndNewsSection .top-performer-section img {
+    height: 400px;
+}
+
+#topPerformerAndNewsSection .top-news-section img {
+    height: 100px;
+}
+
+#topPerformerAndNewsSection .top-news-section h1 {
+    font-size: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+#topPerformerAndNewsSection .news-date {
+    font-size: 12px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+#topPerformerAndNewsSection .top-performer-side-img {
+    position: relative;
+}
+
+#topPerformerAndNewsSection .top-performer-side-img::before {
+    font-size: 18px;
+    color: #fff;
+    padding: 35px 15px 0 15px;
+    line-height: 23px;
+    font-weight: 600;
+    position: absolute;
+}
+
+#topPerformerAndNewsSection .top-performer-side-img-1::before {
+    content: "K Prapanjan keeps it fresh by learning from Pardeep Narwal, Pawan Sehrawat";
+    position: absolute;
+}
+
+#topPerformerAndNewsSection .top-performer-side-img-2::before {
+    content: "Kabaddi skills: Moves you must know";
+    position: absolute;
+}
+
+#topPerformerAndNewsSection .top-performer-side-img-3::before {
+    content: "Top 5 most thrilling matches from vivo Pro Kabaddi Season 7";
+    position: absolute;
+}
+
+/* Latest Videos */
+
+#latestVideosSection {
+    background: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    width: 100%;
+    padding: 50px;
+}
+
+#latestVideosSection h1 {
+    font-size: 17px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+#latestVideosSection .card {
+    width: 16.5rem;
+    position: relative;
+}
+
+#latestVideosSection .card::before {
+    content: url('../img/play-button-o.svg');
+    position: absolute;
+    left: 45%;
+    top: 27%;
+}
+
+
+/* Top Player List */
+
+#topPlayerList {
+    padding: 50px 10px 50px 10px;
+}
+
+#topPlayerList .top-player-list-row {
+    list-style: none;
+}
+
+#topPlayerList .top-player-list-row .col {
+    justify-content: center;
+}
+
+#topPlayerList .top-player-list-row .player-box {
+    padding: 0 10px 0 10px ;
+}
+
+#topPlayerList h1.hp-player-name {
+    color: #111;
+    font-size: 1rem;
+    line-height: 1.1;
+    font-weight: 100;
+}
+
+#topPlayerList h1.hp-player-name span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#topPlayerList h1.hp-player-score {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#topPlayerList h4 {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#topPlayerList .player-bg-1 {
+    background-image: linear-gradient(to top right,#ff481e,#f7de06);
+}
+
+#topPlayerList .player-bg-2 {
+    background-image: linear-gradient(to top right,#9b35f8,#692f9e);
+}
+
+#topPlayerList .player-bg-3 {
+    background-image: linear-gradient(to top right,#19398a,#0d1e49);
+}
+
+#topPlayerList .player-bg-4 {
+    background-image: linear-gradient(to top right,#cb0a2b,#df314f);
+}
+
+#topPlayerList .player-bg-5 {
+    background-image: linear-gradient(to top right,#19398a,#0d1e49);
+}
+
+#topPlayerList .player-bg-6 {
+    background-image: linear-gradient(to top right,#018984,#00a09a);
+}
+
+#topPlayerList .card:hover .player-bg-1 {
+    background-image: linear-gradient(to top right,#f7de06,#ff481e);
+}
+
+#topPlayerList .card:hover .player-bg-2 {
+    background-image: linear-gradient(to top right,#692f9e,#9b35f8);
+}
+
+#topPlayerList .card:hover .player-bg-3 {
+    background-image: linear-gradient(to top right,#0d1e49,#19398a);
+}
+
+#topPlayerList .card:hover .player-bg-4 {
+    background-image: linear-gradient(to top right,#df314f,#cb0a2b);
+}
+
+#topPlayerList .card:hover .player-bg-5 {
+    background-image: linear-gradient(to top right,#0d1e49,#19398a);
+}
+
+#topPlayerList .card:hover .player-bg-6 {
+    background-image: linear-gradient(to top right,#00a09a,#018984);
+}
+
+#topPlayerList .card,
+#topPlayerList .player-bg {
+    border-radius: 20px;
+}
+
+#topPlayerList .card {
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    transform: translateY(0);
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
+    transition: box-shadow .25s,transform .25s;
+    width: 250px;
+}
+
+#topPlayerList .card:hover {
+    box-shadow: 0 1px 10px 2px rgb(0 0 0 / 20%);
+    transform: translateY(-5px);
+}
+
+#topPlayerList .player-bg {
+    position: relative;
+}
+
+#topPlayerList .player-bg::before {
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    padding: 5px;
+    font-weight: 700;
+}
+
+#topPlayerList .player-bg-1::before {
+    content: "Top Raider";
+    background-color: #ff481e;
+}
+
+#topPlayerList .player-bg-2::before {
+    content: "Top Defender";
+    background-color: #692f9e;
+}
+
+#topPlayerList .player-bg-3::before {
+    content: "Top Super 10";
+    background-color: #19398a;
+}
+
+#topPlayerList .player-bg-4::before {
+    content: "Top High 5S";
+    background-color: #df314f;
+}
+
+#topPlayerList .player-bg-5::before {
+    content: "Top Super Raids";
+    background-color: #19398a;
+}
+
+#topPlayerList .player-bg-6::before {
+    content: "Top Super Tackles";
+    background-color: #00a09a;
+}
+
+
+/* Our Sponsor Section */
+
+#ourSponsor {
+    background: url("../img/bg-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    width: 100%;
+    padding: 50px;
+}
+
+#ourSponsor h1 {
+    font-size: 34px;
+    color: #00233d;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#ourSponsor img {
+    padding-top: 10px;
+}
+
+#ourSponsor hr {
+    width: 90%;
+}
+
+#ourSponsor img {
+    width: 210px;
+}
+
+/* Main Footer */
+
+#main-footer {
+    background-image: linear-gradient(
+90deg
+,#19398a 12%,#1b4c92 50%,#19398a 89%);
+    height: auto;
+    width: 100%;
+    padding: 50px;
+}
+
+#main-footer ul {
+    list-style: none;
+}
+
+#main-footer ul li {
+    line-height: 45px;
+}
+
+#main-footer ul li a {
+    color: hsla(0,0%,100%,.8);
+    line-height: 45px;
+    font-size: 15px;
+}
+
+#main-footer ul li:first-child {
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#main-footer img {
+    width: 50px;
+    padding : 0 10px 0 10px;
+}
+
+#main-footer h5 {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+#main-footer li.footer-address {
+    color: hsla(0,0%,100%,.8);
+    line-height: 25px;
+    padding-top: 8px;
+}
+
+/* Secondary Footer */
+
+#secondaryFooter {
+    background-color: #000;
+}
+
+#secondaryFooter p {
+    color: #fff;
+}
+
+
+/* Tournament Page */
+
+#tournamentSection {
+    margin-top: 80px;
+    padding: 50px 0 50px 0;
+}
+
+#tournamentSection label {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#tournamentSection .form-check{
+    padding-bottom: 8px;
+}
+
+#tournamentSection h1 a {
+    text-decoration: none !important;
+}
+
+#tournamentSection h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#tournamentSection p {
+    font-weight: 600;
+}
+
+#tournamentSection img.tournament-info-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+#tournamentSection .card:hover {
+    box-shadow: 0 1px 10px 2px rgb(0 0 0 / 20%);
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+/* Single Tournaments */
+
+#singleTournamentSection {
+    padding: 60px 0 50px 0;
+}
+
+#singleTournamentSection .tournament-cover-img {
+    background: url("../img/img-cover1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+#singleTournamentSection .tournament-cover-img::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#singleTournamentSection .tournament-profile {
+    position: absolute;
+    bottom: 10%;
+}
+
+#singleTournamentSection .tournament-profile img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+#singleTournamentSection h1.text-heading {
+    color: #fff !important;
+    margin-bottom: 0 !important;
+}
+
+#singleTournamentSection .tournament-tabs-bg {
+    background-image: linear-gradient(
+90deg
+,#19398a 12%,#1b4c92 50%,#19398a 89%);
+}
+
+#singleTournamentSection .tournament-tabs h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#singleTournamentSection .tournament-tabs {
+    cursor: pointer;
+}
+
+#singleTournamentSection .match-card .card-header p {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#singleTournamentSection .match-card .card-header {
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+}
+
+#singleTournamentSection .match-card .card-body {
+    background-color: #ececec;
+    position: relative;
+}
+
+#singleTournamentSection .match-card .card-body h5 {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#singleTournamentSection .match-card .card-body h1 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#singleTournamentSection .match-card .card-header p.live-text {
+    color: red;
+}
+
+#singleTournamentSection .match-card .card-body h1.match-score {
+    color: #1f4cbe !important;
+}
+
+#singleTournamentSection .match-card .card-body h1.match-vs-text {
+    color: #ef4123 !important;
+}
+
+#singleTournamentSection .match-card .card-body .btn-danger {
+    font-size: 11px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -33px;
+}
+
+#singleTournamentSection .view-more {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#singleTournamentSection #tab-standing img {
+    width: 40px;
+    height: auto;
+}
+
+#singleTournamentSection #tab-top-scorers label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#singleTournamentSection #tab-top-scorers .form-control {
+    font-weight: 600;
+}
+
+#singleTournamentSection #tab-top-scorers th,
+#singleTournamentSection #tab-top-scorers td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#singleTournamentSection #tab-top-scorers table img.team-logo {
+    width: 100px;
+}
+
+#singleTournamentSection #tab-top-scorers table .rank-no,
+#singleTournamentSection #tab-top-scorers table .match-played,
+#singleTournamentSection #tab-top-scorers table .player-points {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+#singleTournamentSection #tab-top-scorers table .player-name {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#singleTournamentSection #tab-teams .card,
+#singleTournamentSection #tab-teams .team-bg {
+    border-radius: 20px;
+    height: 100%;
+}
+
+#singleTournamentSection #tab-teams .card {
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    transform: translateY(0);
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
+    transition: box-shadow .25s,transform .25s;
+    width: 250px;
+    height: 320px;
+}
+
+#singleTournamentSection #tab-teams .card:hover {
+    box-shadow: 0 1px 10px 2px rgb(0 0 0 / 20%);
+    transform: translateY(-5px);
+}
+
+#singleTournamentSection #tab-teams .team-bg-1 {
+    background-image: linear-gradient(to top right,#ff481e,#f7de06);
+}
+
+#singleTournamentSection #tab-teams .team-bg-2 {
+    background-image: linear-gradient(to top right,#19398a,#0d1e49);
+}
+
+#singleTournamentSection #tab-teams .team-bg-3 {
+    background-image: linear-gradient(to top right,#9b35f8,#692f9e);
+}
+
+#singleTournamentSection #tab-teams .team-bg-4 {
+    background-image: linear-gradient(to top right,#cb0a2b,#df314f);
+}
+
+#singleTournamentSection #tab-teams .team-bg-5 {
+    background-image: linear-gradient(to top right,#018984,#00a09a);
+}
+
+#singleTournamentSection #tab-teams .team-bg-6 {
+    background-image: linear-gradient(to top right,#000000,#6e6e6e);
+}
+
+#singleTournamentSection #tab-teams .team-bg-7 {
+    background-image: linear-gradient(to top right,#5a1100,#ff6d4c);
+}
+
+#singleTournamentSection #tab-teams .team-bg-8 {
+    background-image: linear-gradient(to top right,#8b004d,#ff32a3);
+}
+
+#singleTournamentSection #tab-teams .card:hover .team-bg-1 {
+    background-image: linear-gradient(to top right,#f7de06,#ff481e);
+}
+
+#singleTournamentSection #tab-teams .card:hover .team-bg-2 {
+    background-image: linear-gradient(to top right,#0d1e49,#19398a);
+}
+
+#singleTournamentSection #tab-teams .card:hover .team-bg-3 {
+    background-image: linear-gradient(to top right,#692f9e,#9b35f8);
+}
+
+#singleTournamentSection #tab-teams .card:hover .team-bg-4 {
+    background-image: linear-gradient(to top right,#df314f,#cb0a2b);
+}
+
+#singleTournamentSection #tab-teams .card:hover .team-bg-5 {
+    background-image: linear-gradient(to top right,#00a09a,#018984);
+}
+
+#singleTournamentSection #tab-teams .card:hover .team-bg-6 {
+    background-image: linear-gradient(to top right,#6e6e6e,#000000);
+}
+
+#singleTournamentSection #tab-teams .card:hover .team-bg-7 {
+    background-image: linear-gradient(to top right,#ff6d4c,#5a1100);
+}
+
+#singleTournamentSection #tab-teams .card:hover .team-bg-8 {
+    background-image: linear-gradient(to top right,#ff32a3,#8b004d);
+}
+
+#singleTournamentSection #tab-teams h1 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#singleTournamentSection #tab-teams img {
+    padding: 30px;
+}
+
+#singleTournamentSection #tab-gallery img.img-fluid {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#singleTournamentSection #tab-sponsor img {
+    padding: 25px;
+}
+
+#singleTournamentSection #tab-about .card {
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    border-bottom: 1px solid #6e6e6e;
+}
+
+#singleTournamentSection #tab-about h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#singleTournamentSection #tab-about .card-title {
+    font-size: 15px;
+}
+
+#singleTournamentSection #tab-about .card-text {
+    font-size: 18px;
+}
+
+/* Scorecard Section */
+
+#scorecardSection {
+    padding: 60px 0 50px 0;
+    margin-top: 50px;
+}
+
+#scorecardSection .scorecardRow1 h5.match-num::before,
+#scorecardSection .scorecardRow1 h5.match-num::after {
+    background-color: red;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+}
+
+#scorecardSection .scorecardRow1 h5.match-num::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+#scorecardSection .scorecardRow1 h5.match-num::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+#scorecardSection .scorecardRow1 img {
+    width: 185px;
+}
+
+#scorecardSection .scorecardRow1 h1.score-pts {
+    color: #1f4cbe !important;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#scorecardSection .scorecardRow1 h2.vs-text {
+    color: #ef4123 !important;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+#scorecardSection .scorecardRow1 h5 {
+    font-weight: 600;
+}
+
+#scorecardSection h5.match-location {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+#scorecardSection .scorecardRow1 .top-performer-match .pts-title span{
+    font-size: 18px;
+}
+
+#scorecardSection .scorecardRow1 .top-performer-match .pts-num span{
+    color: #1f4cbe !important;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#scorecardSection .scorecardRow1 .top-performer-match .pts-col1{
+    margin-top: 20px;
+}
+
+#scorecardSection .scorecardRow1 .top-performer-match .pts-col2{
+    margin-top: 20px;
+    border-top: 2px solid #adadad;
+    padding: 10px;
+}
+
+#scorecardSection .scorecardRow1 .top-performer-match .border-right {
+    border-right: 2px solid #adadad !important;
+}
+
+#scorecardSection .scorecardRow1 .top-performer-match {
+    background-color: rgb(245 245 245) !important;
+    padding: 30px 0 30px 0;
+}
+
+#scorecardSection .scorecardRow2 button {
+    background-color: #e7e7e7;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#scorecardSection .scorecardRow2 button.active {
+    background-color: #1f4cbe ;
+    color: #fff;
+}
+
+#scorecardSection .scorecardRow2 button:focus,
+#scorecardSection #tab-scorecard button:focus {
+    box-shadow: none;
+}
+
+#scorecardSection #tab-scorecard button {
+    cursor: pointer;
+    font-size: 18px;
+    background-color: rgb(245 245 245);
+    width: 50%;
+}
+
+#scorecardSection #tab-scorecard button.active {
+    background-color: #ef4123;
+    color: #fff;
+}
+
+#scorecardSection #tab-team1 h4,
+#scorecardSection #tab-team2 h4 {
+    background-color: #e2e2e2;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+
+#scorecardSection h1 {
+    font-size: 1.1rem;
+}
+
+#scorecardSection #tab-scorecard h1.player-name span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#scorecardSection #tab-scorecard h1.player-score {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#scorecardSection #tab-scorecard h5 {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* media query */
+
+/* Top Player List */
+
+@media only screen and (max-width:1440px) {
+
+    #topPlayerList .top-player-list-row {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-bottom: 2rem;
+    }
+
+    #topPlayerList .top-player-list-row .col {
+        justify-content: start;
+    }
+}

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yuva Sports | Tournament</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/company-logo.png" alt="company-logo">
+            </a> 
+            
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="tournament.html" class="nav-link">Tournament</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="stats.html" class="nav-link dropdown-toggle" data-toggle="dropdown" >Stats</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Teams</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">All Players</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="videos.html" class="nav-link dropdown-toggle" data-toggle="dropdown" >Videos</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Highlights</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Video Hub</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Interview</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">All Videos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                </ul>
+                
+            </div>            
+        </div>
+    </nav>
+
+    <!-- Tournament Section -->
+    
+    <section id="singleTournamentSection">
+        <div class="tournament-cover-img">
+            <div class="container">
+                <div class="tournament-profile d-flex">
+                    <div>
+                        <img src="img/tournament-profile-icon.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="align-self-center">
+                        <h1 class="text-heading">Thakur Academy Internal Kabaddi Matches</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tournament Tabs -->
+
+        <div class="container">
+            <div class="row tournament-tabs">
+                <div class="col justify-content-center">
+                    <div class="d-md-flex tournament-tabs-bg justify-content-center">
+                        <div class="tournament-item p-4" data-toggle="collapse" data-target="#tab-matches">
+                            <h5>Matches</h5>
+                        </div>
+                        <div class="tournament-item p-4" data-toggle="collapse" data-target="#tab-top-scorers">
+                            <h5>Top Scorers</h5>
+                        </div>
+                        <div class="tournament-item p-4" data-toggle="collapse" data-target="#tab-standing">
+                            <h5>Standing</h5>
+                        </div>
+                        <div class="tournament-item p-4" data-toggle="collapse" data-target="#tab-teams">
+                            <h5>Teams</h5>
+                        </div>
+                        <div class="tournament-item p-4" data-toggle="collapse" data-target="#tab-gallery">
+                            <h5>Gallery</h5>
+                        </div>
+                        <div class="tournament-item p-4" data-toggle="collapse" data-target="#tab-sponsor">
+                            <h5>Sponsor</h5>
+                        </div>
+                        <div class="tournament-item p-4" data-toggle="collapse" data-target="#tab-about">
+                            <h5>About</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matches -->
+
+            <div id="tab-matches" class="collapse show mt-5">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <div class="card match-card">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p>Match 1</p>
+                                    </div>
+                                    <div>
+                                        <p class="live-text"></p>
+                                    </div>
+                                    <div>
+                                        <p>2 Jun</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <h5>Vijay Warriors</h5>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <div class="d-flex justify-content-around">
+                                            <h1 class="match-score">33</h1>
+                                            <h1 class="match-vs-text">Vs</h1>
+                                            <h1 class="match-score">28</h1>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <h5>Krida Mandal</h5>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col">
+                                        <a href="http://127.0.0.1:5500/single-scorecard.html" class="btn btn-danger">View Matchcenter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card match-card">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p>Match 2</p>
+                                    </div>
+                                    <div>
+                                        <p class="live-text"></p>
+                                    </div>
+                                    <div>
+                                        <p>3 Jun</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <h5>Vijay Warriors</h5>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <div class="d-flex justify-content-around">
+                                            <h1 class="match-score">00</h1>
+                                            <h1 class="match-vs-text">Vs</h1>
+                                            <h1 class="match-score">00</h1>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <h5>Krida Mandal</h5>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col">
+                                        <a href="http://127.0.0.1:5500/single-scorecard.html" class="btn btn-danger">View Matchcenter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card match-card">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p>Match 3</p>
+                                    </div>
+                                    <div>
+                                        <p class="live-text"></p>
+                                    </div>
+                                    <div>
+                                        <p>4 Jun</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <h5>Vijay Warriors</h5>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <div class="d-flex justify-content-around">
+                                            <h1 class="match-score">00</h1>
+                                            <h1 class="match-vs-text">Vs</h1>
+                                            <h1 class="match-score">00</h1>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <h5>Krida Mandal</h5>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col">
+                                        <a href="http://127.0.0.1:5500/single-scorecard.html" class="btn btn-danger">View Matchcenter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card match-card">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p>Match 4</p>
+                                    </div>
+                                    <div>
+                                        <p class="live-text"></p>
+                                    </div>
+                                    <div>
+                                        <p>4 Jun</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <h5>Vijay Warriors</h5>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <div class="d-flex justify-content-around">
+                                            <h1 class="match-score">00</h1>
+                                            <h1 class="match-vs-text">Vs</h1>
+                                            <h1 class="match-score">00</h1>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <h5>Krida Mandal</h5>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col">
+                                        <a href="http://127.0.0.1:5500/single-scorecard.html" class="btn btn-danger">View Matchcenter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <p class="text-center view-more"><a href="#">View More</a></p>  
+                    </div>
+                </div>     
+            </div>
+
+            <!-- Top Scorer -->
+
+            <div id="tab-top-scorers" class="collapse mt-5">
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <label for="filter-by-team">Filter by Team</label>
+                        <select class="form-control form-control-md">
+                            <option selected>All Teams</option>
+                            <option value="1">Dabang Delhi K.C.</option>
+                            <option value="2">Bengal Warriors</option>
+                            <option value="3">Bengaluru Bulls</option>
+                            <option value="4">Haryana Steelers</option>
+                            <option value="5">U Mumba</option>
+                            <option value="6">Patna Pirates</option>
+                            <option value="7">U.P. Yoddha</option>
+                            <option value="8">Puneri Paltan</option>
+                          </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="filter-by-team">Filter by Leaders</label>
+                        <select class="form-control form-control-md">
+                            <option selected>Total Points</option>
+                            <option value="1">Successful Raids</option>
+                            <option value="2">Raid Points</option>
+                            <option value="3">Successful Tackles</option>
+                            <option value="4">Tackle Points</option>
+                            <option value="5">Avg Raid Points</option>
+                            <option value="6">Avg Tackle Points</option>
+                            <option value="7">Do-or-Die Raid Points</option>
+                            <option value="8">Super Raids</option>
+                            <option value="8">Super Tackles</option>
+                            <option value="8">Super 10s</option>
+                            <option value="8">High 5s</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                  <th scope="col">Rank</th>
+                                  <th scope="col"></th>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Team</th>
+                                  <th scope="col">Matches played</th>
+                                  <th scope="col">Total points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row" class="rank-no">1</th>
+                                  <th scope="row"><img src="img/ts/1.png" class="img-fluid"></th>
+                                  <td class="player-name">Pawan Kumar Sehrawat</td>
+                                  <td><img src="img/pt/6.png" class="img-fluid team-logo"></td>
+                                  <td class="match-played">24</td>
+                                  <td class="player-points">360</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="rank-no">2</th>
+                                    <th scope="row"><img src="img/ts/2.png" class="img-fluid"></th>
+                                    <td class="player-name">Pardeep Narwal</td>
+                                    <td><img src="img/pt/8.png" class="img-fluid team-logo"></td>
+                                    <td class="match-played">22</td>
+                                    <td class="player-points">304</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="rank-no">3</th>
+                                    <th scope="row"><img src="img/ts/3.png" class="img-fluid"></th>
+                                    <td class="player-name">Naveen Kumar</td>
+                                    <td><img src="img/pt/1.png" class="img-fluid team-logo"></td>
+                                    <td class="match-played">23</td>
+                                    <td class="player-points">303</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="rank-no">4</th>
+                                    <th scope="row"><img src="img/ts/4.png" class="img-fluid"></th>
+                                    <td class="player-name">Siddharth Sirish Desai</td>
+                                    <td><img src="img/pt/9.png" class="img-fluid team-logo"></td>
+                                    <td class="match-played">22</td>
+                                    <td class="player-points">220</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="rank-no">5</th>
+                                    <th scope="row"><img src="img/ts/5.png" class="img-fluid"></th>
+                                    <td class="player-name">Maninder Singh</td>
+                                    <td><img src="img/pt/2.png" class="img-fluid team-logo"></td>
+                                    <td class="match-played">20</td>
+                                    <td class="player-points">210</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standing -->
+
+            <div id="tab-standing" class="collapse mt-5">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Rank</th>
+                        <th scope="col">Team</th>
+                        <th scope="col">P</th>
+                        <th scope="col">W</th>
+                        <th scope="col">L</th>
+                        <th scope="col">T</th>
+                        <th scope="col">Score Diff.</th>
+                        <th scope="col">Pts</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Q</th>
+                        <th scope="row">1</th>
+                        <td><img src="img/pt/1.png" class="img-fluid"><span class="ml-4">Dabang Delhi K.C.</span></td>
+                        <td>22</td>
+                        <td>15</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>66</td>
+                        <td>85</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Q</th>
+                        <th scope="row">2</th>
+                        <td><img src="img/pt/2.png" class="img-fluid"><span class="ml-4">Bengal Warriors</span></td>
+                        <td>22</td>
+                        <td>14</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>71</td>
+                        <td>83</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Q</th>
+                        <th scope="row">3</th>
+                        <td><img src="img/pt/3.png" class="img-fluid"><span class="ml-4">U.P. Yoddha</span></td>
+                        <td>22</td>
+                        <td>13</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>74</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Q</th>
+                        <th scope="row">4</th>
+                        <td><img src="img/pt/4.png" class="img-fluid"><span class="ml-4">U Mumba</span></td>
+                        <td>22</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>47</td>
+                        <td>72</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <th scope="row">5</th>
+                        <td><img src="img/pt/5.png" class="img-fluid"><span class="ml-4">Haryana Steelers</span></td>
+                        <td>22</td>
+                        <td>13</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>71</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <th scope="row">6</th>
+                        <td><img src="img/pt/6.png" class="img-fluid"><span class="ml-4">Bengaluru Bulls</span></td>
+                        <td>22</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>16</td>
+                        <td>64</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <th scope="row">7</th>
+                        <td><img src="img/pt/7.png" class="img-fluid"><span class="ml-4">Jaipur Pink Panthers</span></td>
+                        <td>22</td>
+                        <td>9</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>-13</td>
+                        <td>58</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <th scope="row">8</th>
+                        <td><img src="img/pt/8.png" class="img-fluid"><span class="ml-4">Patna Pirates</span></td>
+                        <td>22</td>
+                        <td>8</td>
+                        <td>13</td>
+                        <td>1</td>
+                        <td>29</td>
+                        <td>51</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+            <!-- Teams -->
+
+            <div id="tab-teams" class="collapse mt-5">
+                <div class="row">
+                    <div class="col-md-3 mb-5">
+                        <div class="team-box">
+                            <div class="card text-center">
+                                <div class="team-bg team-bg-1">
+                                    <img class="card-img-top img-fluid" src="img/pt/1.png" alt="">
+                                    <div class="card-body">
+                                        <h1 class="team-name">Dabang Delhi K.C.</h1>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="team-box">
+                            <div class="card text-center">
+                                <div class="team-bg team-bg-2">
+                                    <img class="card-img-top img-fluid" src="img/pt/2.png" alt="">
+                                    <div class="card-body">
+                                        <h1 class="team-name">Bengal Warriors</h1>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="team-box">
+                            <div class="card text-center">
+                                <div class="team-bg team-bg-3">
+                                    <img class="card-img-top img-fluid" src="img/pt/3.png" alt="">
+                                    <div class="card-body">
+                                        <h1 class="team-name">U.P. Yoddha</h1>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="team-box">
+                            <div class="card text-center">
+                                <div class="team-bg team-bg-4">
+                                    <img class="card-img-top img-fluid" src="img/pt/4.png" alt="">
+                                    <div class="card-body">
+                                        <h1 class="team-name">U Mumba</h1>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="team-box">
+                            <div class="card text-center">
+                                <div class="team-bg team-bg-5">
+                                    <img class="card-img-top img-fluid" src="img/pt/5.png" alt="">
+                                    <div class="card-body">
+                                        <h1 class="team-name">Haryana Steelers</h1>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="team-box">
+                            <div class="card text-center">
+                                <div class="team-bg team-bg-6">
+                                    <img class="card-img-top img-fluid" src="img/pt/6.png" alt="">
+                                    <div class="card-body">
+                                        <h1 class="team-name">Bengaluru Bulls</h1>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="team-box">
+                            <div class="card text-center">
+                                <div class="team-bg team-bg-7">
+                                    <img class="card-img-top img-fluid" src="img/pt/7.png" alt="">
+                                    <div class="card-body">
+                                        <h1 class="team-name">Jaipur Pink Panthers</h1>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="team-box">
+                            <div class="card text-center">
+                                <div class="team-bg team-bg-8">
+                                    <img class="card-img-top img-fluid" src="img/pt/8.png" alt="">
+                                    <div class="card-body">
+                                        <h1 class="team-name">Patna Pirates</h1>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GAllery -->
+
+            <div id="tab-gallery" class="collapse mt-5">
+                <div class="row">
+                    <a href="img/gallery-img.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3 mb-4">
+                        <img src="img/gallery-img.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/gallery-img.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3 mb-4">
+                        <img src="img/gallery-img.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/gallery-img.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3 mb-4">
+                        <img src="img/gallery-img.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/gallery-img.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3 mb-4">
+                        <img src="img/gallery-img.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/gallery-img.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3 mb-4">
+                        <img src="img/gallery-img.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/gallery-img.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3 mb-4">
+                        <img src="img/gallery-img.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/gallery-img.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3 mb-4">
+                        <img src="img/gallery-img.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/gallery-img.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3 mb-4">
+                        <img src="img/gallery-img.jpg" class="img-fluid rounded">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sponsors -->
+
+            <div id="tab-sponsor" class="collapse mt-5">
+                <div class="row">
+                    <div class="col-md-3 mb-5">
+                        <img src="img/sponsor1.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="img/sponsor2.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="img/sponsor3.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="img/sponsor4.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="img/sponsor5.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="img/sponsor6.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About -->
+
+            <div id="tab-about" class="collapse mt-5">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h5>Organizer's Detail</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="organization-item">
+                                    <div class="card-title">NAME</div>
+                                    <div class="card-text">Pramod Tiwary</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h5>Tournament's Detail</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="tournament-item">
+                                    <div class="card-title">NAME</div>
+                                    <div class="card-text">Thakur Academy Internal Kabaddi Matches</div>
+                                </div>
+                                <hr>
+                                <div class="tournament-item">
+                                    <div class="card-title">DATES</div>
+                                    <div class="card-text">02-Jun-21 to 10-Jun-21</div>
+                                </div>
+                                <hr>
+                                <div class="tournament-item">
+                                    <div class="card-title">LOCATIONS</div>
+                                    <div class="card-text">Ekta Ground, Subhash Lane, Off Daftary Road, Malad East, Mumbai - 400097</div>
+                                </div>
+                                <hr>
+                                <div class="tournament-item">
+                                    <div class="card-title">GROUND TYPE</div>
+                                    <div class="card-text">Mat</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Main Footer -->
+
+    <section id="main-footer">
+        <div class="container page-footer-bg">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h5>Follow Yuvasports On Social</h5>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <a href="#"><img class="img-fluid" src="img/facebook.svg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img class="img-fluid" src="img/instagram.svg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img class="img-fluid" src="img/twitter.svg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img class="img-fluid" src="img/youtube.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="row">
+               <div class="col-md-3">
+                   <ul>
+                       <li>Quicklinks</li>
+                       <li><a href="#">News</a></li>
+                       <li><a href="#">Videos</a></li>
+                       <li><a href="#">Stats</a></li>
+                       <li><a href="#">Gallery</a></li>
+                       <li><a href="#">Vanues</a></li>
+                   </ul>
+               </div>
+               <div class="col-md-3">
+                <ul>
+                    <li>About</li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Paid Service Terms</a></li>
+                    <li><a href="#">Image Use Terms</a></li>
+                </ul>
+               </div>
+               <div class="col-md-3">
+                <ul>
+                    <li>Contact</li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sponsorship</a></li>
+                </ul>
+               </div>
+               <div class="col-md-3">
+                <ul>
+                    <li>Office Address</li>
+                    <li class="footer-address">Jay Bhavani Co. Ho. Society,
+                        Akurli Road, Narsi Pada,
+                        Hanuman Nagar, Kandivali (E),
+                        Mumbai 400101.
+                    </li>
+                </ul>
+               </div>
+           </div>
+        </div>
+    </section>
+
+    <footer id="secondaryFooter">
+        <div class="container">
+            <p class="p-3">© Copyright Yuvasports 2021. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/app.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval : 6000,
+            pause : hover
+        });
+    </script>
+    <script>
+        $('.tournament-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
+    </script>
+    <script>
+        $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+    
+</body>
+</html>
