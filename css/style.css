@@ -1004,8 +1004,12 @@ h1.text-heading {
     padding: 10px;
 }
 
-#scorecardSection .scorecardRow1 .top-performer-match .border-right {
-    border-right: 2px solid #adadad !important;
+/* #scorecardSection .scorecardRow1 .top-performer-match .border-right {
+    border-right: 2px solid #adadad;
+} */
+
+#scorecardSection .live-match-top-performer {
+    color: #ef4123;
 }
 
 #scorecardSection .scorecardRow1 .top-performer-match {
