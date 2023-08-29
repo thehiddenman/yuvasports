@@ -19,4 +19,20 @@
     #topPerformerAndNewsSection {
         padding: 50px 10px !important;
     }
+
+    #ourMilestone {
+        padding: 50px 0px !important;
+    }
+
+    #ourMilestone .left-border {
+        border-right: none !important;
+    }
+
+    #ourMilestone .join-btn h5 {
+        line-height: 60px;
+    }
+
+    #ourSponsor h1 {
+        font-size: 22px !important;
+    }
 }

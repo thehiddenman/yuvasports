@@ -474,7 +474,7 @@ h1.text-heading {
 }
 
 #ourMilestone h1 {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 #ourMilestone h2 {
@@ -482,12 +482,12 @@ h1.text-heading {
     font-weight: 600;
     margin: 10px 0;
     line-height: 1;
-    color: #fff;
+    color: #ff6300;
 }
 
 #ourMilestone h2 span {
-    font-weight: 400;
-    font-size: 22px;
+    font-weight: 600;
+    font-size: 21px;
     text-transform: uppercase;
     margin-left: 8px;
     margin-top: 10px;
@@ -497,6 +497,7 @@ h1.text-heading {
 
 #ourMilestone .left-border {
     border-right: 1px solid #a0a0a0;
+    margin-bottom: 25px;
 }
 
 #ourMilestone hr {
@@ -517,7 +518,7 @@ h1.text-heading {
 }
 
 #ourSponsor h1 {
-    font-size: 34px;
+    font-size: 30px;
     color: #00233d;
     text-align: center;
     text-transform: uppercase;
