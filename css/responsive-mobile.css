@@ -35,4 +35,34 @@
     #ourSponsor h1 {
         font-size: 22px !important;
     }
+
+    /* single-scorecard */
+
+    #scorecardSection .scorecardRow1 img {
+        width: 100px !important;
+    }
+
+    #scorecardSection .scorecardRow1 h1.score-pts {
+        font-size: 40px !important;
+    }
+
+    #scorecardSection .scorecardRow1 h2.vs-text {
+        font-size: 25px !important;
+    }
+
+    #scorecardSection .live-team-name {
+        font-size: 15px;
+    }
+
+    #scorecardSection {
+        padding: 60px 10px 50px 10px;
+    }
+
+    #scorecardSection .live-match-ply-name {
+        font-size: 16px;
+    }
+
+    #scorecardSection .scorecardRow1 .top-performer-match .border-right {
+        border-right: none !important;
+    }
 }
