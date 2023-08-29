@@ -8,4 +8,15 @@
         width: 100% !important;
         font-size: 16px !important;
     }
+
+    /* Home */
+
+    button.navbar-toggler:focus {
+        outline: none !important;
+        border: none !important;
+    }
+
+    #topPerformerAndNewsSection {
+        padding: 50px 10px !important;
+    }
 }
